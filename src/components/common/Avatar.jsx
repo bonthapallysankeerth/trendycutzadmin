@@ -1,0 +1,1 @@
+export default function Avatar({name,large=false}){const initials=name.split(" ").filter(Boolean).map(x=>x[0]).join("").slice(0,2).toUpperCase();return <div className={`avatar ${large?"large":""}`}>{initials}</div>;}
